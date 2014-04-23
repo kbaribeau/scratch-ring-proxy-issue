@@ -1,8 +1,4 @@
-# scratch-ring-proxy-issue
-
-A Clojure library designed to ... well, that part is up to you.
-
-## Usage
+## Problem Statement
 
 I'm perpplexed by the behaviour I see here.
 
@@ -20,10 +16,3 @@ again, note that there's no error.
 compojure.handler?** I've noticed that the ring-proxy jar contains 1.3MB worth of
 stuff, it seems to me like a ~60 line clojure lib should produce a much smaller
 jar, but I'm at a loss to explain why this happens.
-
-
-## License
-
-Copyright © 2014 FIXME
-
-Distributed under the Eclipse Public License, the same as Clojure.

@@ -29,3 +29,9 @@ The whole thing is complected by a couple of other factors:
 What happens is that when we depend on ring-proxy, even if we try to exclude the ring dependency, some ring 1.1.8 code is included because of the (transitive?) AOT compilation, which means that assoc-conj isn't in the namespace where expect to find it.
 
 I don't think I'm completely clear of all of the details of what's going on here yet, but I think I've got the gist of it.
+
+## Possible Solutions
+
+* Work out a patch for ring-proxy that somehow avoids AOT compilation. Maybe this means moving their standalone server to it's own project.
+* Remove any dependencies on ring 1.2.1, only depend on ring 1.1.8
+* Others?

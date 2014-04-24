@@ -33,5 +33,5 @@ I don't think I'm completely clear of all of the details of what's going on here
 ## Possible Solutions
 
 * Work out a patch for ring-proxy that somehow avoids AOT compilation. Maybe this means moving their standalone server to it's own project.
-* Remove any dependencies on ring 1.2.1, only depend on ring 1.1.8
+* Remove any dependencies on ring 1.2.1, only depend on ring 1.1.8 (depending on the project, this can be as easy as rolling back to compojure 1.1.5 instead of using 1.1.6)
 * Others?
